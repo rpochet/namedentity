@@ -1,0 +1,1435 @@
+[2015-06-18 22:19:31,126][WARN ][bootstrap                ] - [main] - JNA not found. native methods will be disabled.
+[2015-06-18 22:19:31,126][WARN ][bootstrap                ] - [main] - cannot mlockall because JNA is not available
+[2015-06-18 22:19:31,127][WARN ][bootstrap                ] - [main] - cannot register console handler because JNA is not available
+[2015-06-18 22:19:31,191][INFO ][node                     ] - [main] - [Ringer] version[1.6.0], pid[16612], build[cdd3ac4/2015-06-09T13:36:34Z]
+[2015-06-18 22:19:31,191][INFO ][node                     ] - [main] - [Ringer] initializing ...
+[2015-06-18 22:19:31,191][DEBUG][node                     ] - [main] - [Ringer] using home [/home/rpochet/workspace/namedentity], config [/home/rpochet/workspace/namedentity/config], data [[/home/rpochet/workspace/namedentity/data]], logs [/home/rpochet/workspace/namedentity/logs], work [/home/rpochet/workspace/namedentity/work], plugins [/home/rpochet/elasticsearch-1.3.4/plugins]
+[2015-06-18 22:19:31,218][DEBUG][plugins                  ] - [main] - [Ringer] lucene property is not set in plugin es-plugin.properties file. Skipping test.
+[2015-06-18 22:19:31,226][DEBUG][plugins                  ] - [main] - [Ringer] [/home/rpochet/elasticsearch-1.3.4/plugins/namedentity/_site] directory does not exist.
+[2015-06-18 22:19:31,228][DEBUG][plugins                  ] - [main] - [Ringer] skipping [file:/home/rpochet/workspace/namedentity/target/classes/es-plugin.properties]
+[2015-06-18 22:19:31,229][DEBUG][plugins                  ] - [main] - [Ringer] lucene property is not set in plugin es-plugin.properties file. Skipping test.
+[2015-06-18 22:19:31,229][DEBUG][plugins                  ] - [main] - [Ringer] [/home/rpochet/elasticsearch-1.3.4/plugins/mapper-attachments/_site] directory does not exist.
+[2015-06-18 22:19:31,230][DEBUG][plugins                  ] - [main] - [Ringer] [/home/rpochet/elasticsearch-1.3.4/plugins/mapper-attachments/_site] directory does not exist.
+[2015-06-18 22:19:31,231][INFO ][plugins                  ] - [main] - [Ringer] loaded [mapper-attachments, namedentity], sites [marvel, inquisitor, browser, elasticsearch-kopf, head, kibana]
+[2015-06-18 22:19:31,254][DEBUG][common.compress.lzf      ] - [main] - using encoder [VanillaChunkDecoder] and decoder[{}] 
+[2015-06-18 22:19:31,265][DEBUG][env                      ] - [main] - [Ringer] using node location [[org.elasticsearch.env.NodeEnvironment$NodePath@4060525c]], local_node_id [0]
+[2015-06-18 22:19:31,269][DEBUG][env                      ] - [main] - [Ringer] node data locations details:
+ -> /home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0, free_space [149gb], usable_space [137.3gb], total_space [231.3gb], mount [/home/rpochet (/home/rpochet/.Private)], type [ecryptfs]
+[2015-06-18 22:19:31,274][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [generic], type [cached], keep_alive [30s]
+[2015-06-18 22:19:31,280][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [index], type [fixed], size [8], queue_size [200]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [bulk], type [fixed], size [8], queue_size [50]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [get], type [fixed], size [8], queue_size [1k]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [search], type [fixed], size [13], queue_size [1k]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [suggest], type [fixed], size [8], queue_size [1k]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [percolate], type [fixed], size [8], queue_size [1k]
+[2015-06-18 22:19:31,282][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [management], type [scaling], min [1], size [5], keep_alive [5m]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [listener], type [fixed], size [4], queue_size [null]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [flush], type [scaling], min [1], size [4], keep_alive [5m]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [merge], type [scaling], min [1], size [4], keep_alive [5m]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [refresh], type [scaling], min [1], size [4], keep_alive [5m]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [warmer], type [scaling], min [1], size [4], keep_alive [5m]
+[2015-06-18 22:19:31,283][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [snapshot], type [scaling], min [1], size [4], keep_alive [5m]
+[2015-06-18 22:19:31,284][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [optimize], type [fixed], size [1], queue_size [null]
+[2015-06-18 22:19:31,284][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [fetch_shard_started], type [scaling], min [1], size [16], keep_alive [5m]
+[2015-06-18 22:19:31,284][DEBUG][threadpool               ] - [main] - [Ringer] creating thread_pool [fetch_shard_store], type [scaling], min [1], size [16], keep_alive [5m]
+[2015-06-18 22:19:35,046][DEBUG][script                   ] - [main] - [Ringer] failed to load groovy
+java.lang.ClassNotFoundException: groovy.lang.GroovyClassLoader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.elasticsearch.script.ScriptModule.configure(ScriptModule.java:94)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:204)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:85)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:130)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:99)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:207)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:77)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:245)
+[2015-06-18 22:19:35,050][DEBUG][script                   ] - [main] - [Ringer] failed to load lucene expressions
+java.lang.ClassNotFoundException: org.apache.lucene.expressions.Expression
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.elasticsearch.script.ScriptModule.configure(ScriptModule.java:108)
+	at org.elasticsearch.common.inject.AbstractModule.configure(AbstractModule.java:60)
+	at org.elasticsearch.common.inject.spi.Elements$RecordingBinder.install(Elements.java:204)
+	at org.elasticsearch.common.inject.spi.Elements.getElements(Elements.java:85)
+	at org.elasticsearch.common.inject.InjectorShell$Builder.build(InjectorShell.java:130)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:99)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:93)
+	at org.elasticsearch.common.inject.Guice.createInjector(Guice.java:70)
+	at org.elasticsearch.common.inject.ModulesBuilder.createInjector(ModulesBuilder.java:59)
+	at org.elasticsearch.node.internal.InternalNode.<init>(InternalNode.java:207)
+	at org.elasticsearch.node.NodeBuilder.build(NodeBuilder.java:159)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:77)
+	at org.elasticsearch.bootstrap.Bootstrap.main(Bootstrap.java:245)
+[2015-06-18 22:19:35,846][DEBUG][monitor.jvm              ] - [main] - [Ringer] enabled [true], last_gc_enabled [false], interval [1s], gc_threshold [{old=GcThreshold{name='old', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, default=GcThreshold{name='default', warnThreshold=10000, infoThreshold=5000, debugThreshold=2000}, young=GcThreshold{name='young', warnThreshold=1000, infoThreshold=700, debugThreshold=400}}]
+[2015-06-18 22:19:35,846][DEBUG][monitor.os               ] - [main] - [Ringer] Using probe [org.elasticsearch.monitor.os.JmxOsProbe@4609f765] with refresh_interval [1s]
+[2015-06-18 22:19:35,847][DEBUG][monitor.process          ] - [main] - [Ringer] Using probe [org.elasticsearch.monitor.process.JmxProcessProbe@11797e27] with refresh_interval [1s]
+[2015-06-18 22:19:35,850][DEBUG][monitor.jvm              ] - [main] - [Ringer] Using refresh_interval [1s]
+[2015-06-18 22:19:35,850][DEBUG][monitor.network          ] - [main] - [Ringer] Using probe [org.elasticsearch.monitor.network.JmxNetworkProbe@161c175a] with refresh_interval [5s]
+[2015-06-18 22:19:35,851][DEBUG][monitor.network          ] - [main] - [Ringer] net_info
+host [rpochet]
+virbr0	display_name [virbr0]
+		address [/192.168.122.1] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [false] virtual [false]
+wlan0	display_name [wlan0]
+		address [/fe80:0:0:0:3ea9:f4ff:fe86:43c%3] [/192.168.1.12] 
+		mtu [1500] multicast [true] ptp [false] loopback [false] up [true] virtual [false]
+lo	display_name [lo]
+		address [/0:0:0:0:0:0:0:1%1] [/127.0.0.1] 
+		mtu [65536] multicast [false] ptp [false] loopback [true] up [true] virtual [false]
+
+[2015-06-18 22:19:35,851][DEBUG][monitor.fs               ] - [main] - [Ringer] Using probe [org.elasticsearch.monitor.fs.JmxFsProbe@168ef985] with refresh_interval [1s]
+[2015-06-18 22:19:35,855][DEBUG][common.netty             ] - [main] - using gathering [true]
+[2015-06-18 22:19:35,875][DEBUG][discovery.zen.elect      ] - [main] - [Ringer] using minimum_master_nodes [-1]
+[2015-06-18 22:19:35,876][DEBUG][discovery.zen.ping.multicast] - [main] - [Ringer] using group [224.2.2.4], with port [54328], ttl [3], and address [null]
+[2015-06-18 22:19:35,879][DEBUG][discovery.zen.ping.unicast] - [main] - [Ringer] using initial hosts [], with concurrent_connects [10]
+[2015-06-18 22:19:35,880][DEBUG][discovery.zen            ] - [main] - [Ringer] using ping.timeout [3s], join.timeout [1m], master_election.filter_client [true], master_election.filter_data [false]
+[2015-06-18 22:19:35,880][DEBUG][discovery.zen.fd         ] - [main] - [Ringer] [master] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+[2015-06-18 22:19:35,882][DEBUG][discovery.zen.fd         ] - [main] - [Ringer] [node  ] uses ping_interval [1s], ping_timeout [30s], ping_retries [3]
+[2015-06-18 22:19:36,096][DEBUG][script                   ] - [main] - [Ringer] using script cache with max_size [100], expire [null]
+[2015-06-18 22:19:36,100][INFO ][script                   ] - [main] - [Ringer] compiling script file [/home/rpochet/workspace/namedentity/config/scripts/test1.mustache]
+[2015-06-18 22:19:36,146][DEBUG][cluster.routing.allocation.decider] - [main] - [Ringer] using node_concurrent_recoveries [2], node_initial_primaries_recoveries [4]
+[2015-06-18 22:19:36,146][DEBUG][cluster.routing.allocation.decider] - [main] - [Ringer] using [cluster.routing.allocation.allow_rebalance] with [indices_all_active]
+[2015-06-18 22:19:36,147][DEBUG][cluster.routing.allocation.decider] - [main] - [Ringer] using [cluster_concurrent_rebalance] with [2]
+[2015-06-18 22:19:36,148][DEBUG][indices.recovery         ] - [main] - [Ringer] using max_bytes_per_sec[40mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2015-06-18 22:19:36,169][DEBUG][gateway.local            ] - [main] - [Ringer] using initial_shards [quorum]
+[2015-06-18 22:19:36,218][DEBUG][http.netty               ] - [main] - [Ringer] using max_chunk_size[8kb], max_header_size[8kb], max_initial_line_length[4kb], max_content_length[100mb], receive_predictor[512kb->512kb], pipelining[true], pipelining_max_events[10000]
+[2015-06-18 22:19:36,227][DEBUG][indices.store            ] - [main] - [Ringer] using indices.store.throttle.type [MERGE], with index.store.throttle.max_bytes_per_sec [20mb]
+[2015-06-18 22:19:36,227][DEBUG][indices.memory           ] - [main] - [Ringer] using index_buffer_size [713.7mb], with min_shard_index_buffer_size [4mb], max_shard_index_buffer_size [512mb], shard_inactive_time [5m]
+[2015-06-18 22:19:36,228][DEBUG][indices.cache.filter     ] - [main] - [Ringer] using [node] weighted filter cache with size [10%], actual_size [713.7mb], expire [null], clean_interval [1m]
+[2015-06-18 22:19:36,228][DEBUG][indices.fielddata.cache  ] - [main] - [Ringer] using size [-1] [-1b], expire [null]
+[2015-06-18 22:19:36,256][DEBUG][gateway.local.state.shards] - [main] - [Ringer] took 16ms to load started shards state
+[2015-06-18 22:19:36,258][DEBUG][gateway.local.state.meta ] - [main] - [Ringer] using gateway.local.auto_import_dangled [YES], gateway.local.delete_timeout [30s], with gateway.local.dangling_timeout [2h]
+[2015-06-18 22:19:36,359][DEBUG][gateway.local.state.meta ] - [main] - [Ringer] took 100ms to load state
+[2015-06-18 22:19:36,362][DEBUG][bulk.udp                 ] - [main] - [Ringer] using enabled [false], host [null], port [9700-9800], bulk_actions [1000], bulk_size [5mb], flush_interval [5s], concurrent_requests [4]
+[2015-06-18 22:19:36,374][INFO ][node                     ] - [main] - [Ringer] initialized
+[2015-06-18 22:19:36,374][INFO ][node                     ] - [main] - [Ringer] starting ...
+[2015-06-18 22:19:36,386][DEBUG][netty.channel.socket.nio.SelectorUtil] - [main] - Using select timeout of 500
+[2015-06-18 22:19:36,386][DEBUG][netty.channel.socket.nio.SelectorUtil] - [main] - Epoll-bug workaround enabled = false
+[2015-06-18 22:19:36,411][DEBUG][transport.netty          ] - [main] - [Ringer] using profile[default], worker_count[16], port[9300-9400], bind_host[null], publish_host[null], compress[false], connect_timeout[30s], connections_per_node[2/3/6/1/1], receive_predictor[512kb->512kb]
+[2015-06-18 22:19:36,447][DEBUG][transport.netty          ] - [main] - [Ringer] Bound profile [default] to address [/0:0:0:0:0:0:0:0:9300]
+[2015-06-18 22:19:36,449][INFO ][transport                ] - [main] - [Ringer] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.12:9300]}
+[2015-06-18 22:19:36,463][INFO ][discovery                ] - [main] - [Ringer] elasticsearch/BOBkYHqHQR6ckjl3G8rryQ
+[2015-06-18 22:19:36,464][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [initial_join]: execute
+[2015-06-18 22:19:36,465][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [initial_join]: took 0s no change in cluster_state
+[2015-06-18 22:19:36,500][DEBUG][transport.netty          ] - [elasticsearch[Ringer][[unicast_connect]][T#1]] - [Ringer] connected to node [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]
+[2015-06-18 22:19:40,228][DEBUG][discovery.zen            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] filtered ping responses: (filter_client[true], filter_data[false]) {none}
+[2015-06-18 22:19:40,229][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [zen-disco-join (elected_as_master)]: execute
+[2015-06-18 22:19:40,244][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [1], source [zen-disco-join (elected_as_master)]
+[2015-06-18 22:19:40,245][INFO ][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] new_master [Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]], reason: zen-disco-join (elected_as_master)
+[2015-06-18 22:19:40,245][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 1
+[2015-06-18 22:19:40,245][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 1
+[2015-06-18 22:19:40,247][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:40,247][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:40,248][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [zen-disco-join (elected_as_master)]: took 17ms done applying updated cluster_state (version: 1)
+[2015-06-18 22:19:40,299][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [local-gateway-elected-state]: execute
+[2015-06-18 22:19:40,306][INFO ][http                     ] - [main] - [Ringer] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.12:9200]}
+[2015-06-18 22:19:40,306][INFO ][node                     ] - [main] - [Ringer] started
+[2015-06-18 22:19:40,331][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#1]] - [Ringer] [kibana-int][1] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,332][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#4]] - [Ringer] [test][0] shard state info found: [version [2], primary [true]]
+[2015-06-18 22:19:40,332][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#5]] - [Ringer] [kibana-int][3] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,332][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#2]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,332][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#6]] - [Ringer] [namedentity][0] shard state info found: [version [6], primary [true]]
+[2015-06-18 22:19:40,332][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#3]] - [Ringer] [kibana-int][2] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,333][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#7]] - [Ringer] [kibana-int][0] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,334][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#8]] - [Ringer] [kibana-int][4] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,335][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#4]] - [Ringer] [.scripts][0] shard state info found: [version [14], primary [true]]
+[2015-06-18 22:19:40,335][DEBUG][gateway.local.state.shards] - [elasticsearch[Ringer][fetch_shard_started][T#9]] - [Ringer] [reference_20141002][0] shard state info found: [version [34], primary [true]]
+[2015-06-18 22:19:40,336][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [2], source [local-gateway-elected-state]
+[2015-06-18 22:19:40,336][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 2
+[2015-06-18 22:19:40,337][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 2
+[2015-06-18 22:19:40,343][DEBUG][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating repository [fs][my_backup]
+[2015-06-18 22:19:40,357][WARN ][repositories.fs          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] The specified location [/home/rpochet/elasticsearch-1.3.4/my_backup] should start with a repository path specified by the path.repo setting, but the path.repo setting was not set on this node
+[2015-06-18 22:19:40,359][WARN ][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] failed to create repository [fs][my_backup]
+org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, org.elasticsearch.repositories.RepositoryException: [my_backup] location [/home/rpochet/elasticsearch-1.3.4/my_backup] doesn't match any of the locations specified by path.repo because this setting is empty
+  at org.elasticsearch.repositories.fs.FsRepository.<init>(Unknown Source)
+  while locating org.elasticsearch.repositories.fs.FsRepository
+  while locating org.elasticsearch.repositories.Repository
+
+1 error
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:344)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:178)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl.java:131)
+	at org.elasticsearch.common.inject.ModulesBuilder.createChildInjector(ModulesBuilder.java:69)
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:409)
+	at org.elasticsearch.repositories.RepositoriesService.clusterChanged(RepositoriesService.java:304)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:480)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.repositories.RepositoryException: [my_backup] location [/home/rpochet/elasticsearch-1.3.4/my_backup] doesn't match any of the locations specified by path.repo because this setting is empty
+	at org.elasticsearch.repositories.fs.FsRepository.<init>(FsRepository.java:85)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	... 11 more
+[2015-06-18 22:19:40,361][WARN ][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] failed to create repository [my_backup]
+org.elasticsearch.repositories.RepositoryException: [my_backup] failed to create repository
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:416)
+	at org.elasticsearch.repositories.RepositoriesService.clusterChanged(RepositoriesService.java:304)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:480)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, org.elasticsearch.repositories.RepositoryException: [my_backup] location [/home/rpochet/elasticsearch-1.3.4/my_backup] doesn't match any of the locations specified by path.repo because this setting is empty
+  at org.elasticsearch.repositories.fs.FsRepository.<init>(Unknown Source)
+  while locating org.elasticsearch.repositories.fs.FsRepository
+  while locating org.elasticsearch.repositories.Repository
+
+1 error
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:344)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:178)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl.java:131)
+	at org.elasticsearch.common.inject.ModulesBuilder.createChildInjector(ModulesBuilder.java:69)
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:409)
+	... 7 more
+Caused by: org.elasticsearch.repositories.RepositoryException: [my_backup] location [/home/rpochet/elasticsearch-1.3.4/my_backup] doesn't match any of the locations specified by path.repo because this setting is empty
+	at org.elasticsearch.repositories.fs.FsRepository.<init>(FsRepository.java:85)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	... 11 more
+[2015-06-18 22:19:40,362][DEBUG][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating repository [fs][namedentity]
+[2015-06-18 22:19:40,363][WARN ][repositories.fs          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] The specified location [/home/rpochet/elasticsearch-1.3.4/my_backup/namedentity] should start with a repository path specified by the path.repo setting, but the path.repo setting was not set on this node
+[2015-06-18 22:19:40,364][WARN ][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] failed to create repository [fs][namedentity]
+org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, org.elasticsearch.repositories.RepositoryException: [namedentity] location [/home/rpochet/elasticsearch-1.3.4/my_backup/namedentity] doesn't match any of the locations specified by path.repo because this setting is empty
+  at org.elasticsearch.repositories.fs.FsRepository.<init>(Unknown Source)
+  while locating org.elasticsearch.repositories.fs.FsRepository
+  while locating org.elasticsearch.repositories.Repository
+
+1 error
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:344)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:178)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl.java:131)
+	at org.elasticsearch.common.inject.ModulesBuilder.createChildInjector(ModulesBuilder.java:69)
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:409)
+	at org.elasticsearch.repositories.RepositoriesService.clusterChanged(RepositoriesService.java:304)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:480)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.repositories.RepositoryException: [namedentity] location [/home/rpochet/elasticsearch-1.3.4/my_backup/namedentity] doesn't match any of the locations specified by path.repo because this setting is empty
+	at org.elasticsearch.repositories.fs.FsRepository.<init>(FsRepository.java:85)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	... 11 more
+[2015-06-18 22:19:40,365][WARN ][repositories             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] failed to create repository [namedentity]
+org.elasticsearch.repositories.RepositoryException: [namedentity] failed to create repository
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:416)
+	at org.elasticsearch.repositories.RepositoriesService.clusterChanged(RepositoriesService.java:304)
+	at org.elasticsearch.cluster.service.InternalClusterService$UpdateTask.run(InternalClusterService.java:480)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:188)
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:158)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.common.inject.CreationException: Guice creation errors:
+
+1) Error injecting constructor, org.elasticsearch.repositories.RepositoryException: [namedentity] location [/home/rpochet/elasticsearch-1.3.4/my_backup/namedentity] doesn't match any of the locations specified by path.repo because this setting is empty
+  at org.elasticsearch.repositories.fs.FsRepository.<init>(Unknown Source)
+  while locating org.elasticsearch.repositories.fs.FsRepository
+  while locating org.elasticsearch.repositories.Repository
+
+1 error
+	at org.elasticsearch.common.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:344)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:178)
+	at org.elasticsearch.common.inject.InjectorBuilder.build(InjectorBuilder.java:110)
+	at org.elasticsearch.common.inject.InjectorImpl.createChildInjector(InjectorImpl.java:131)
+	at org.elasticsearch.common.inject.ModulesBuilder.createChildInjector(ModulesBuilder.java:69)
+	at org.elasticsearch.repositories.RepositoriesService.createRepositoryHolder(RepositoriesService.java:409)
+	... 7 more
+Caused by: org.elasticsearch.repositories.RepositoryException: [namedentity] location [/home/rpochet/elasticsearch-1.3.4/my_backup/namedentity] doesn't match any of the locations specified by path.repo because this setting is empty
+	at org.elasticsearch.repositories.fs.FsRepository.<init>(FsRepository.java:85)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.elasticsearch.common.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:54)
+	at org.elasticsearch.common.inject.ConstructorInjector.construct(ConstructorInjector.java:86)
+	at org.elasticsearch.common.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:98)
+	at org.elasticsearch.common.inject.FactoryProxy.get(FactoryProxy.java:52)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter$1.call(ProviderToInternalFactoryAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:837)
+	at org.elasticsearch.common.inject.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:42)
+	at org.elasticsearch.common.inject.Scopes$1$1.get(Scopes.java:57)
+	at org.elasticsearch.common.inject.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:200)
+	at org.elasticsearch.common.inject.InjectorBuilder$1.call(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorImpl.callInContext(InjectorImpl.java:830)
+	at org.elasticsearch.common.inject.InjectorBuilder.loadEagerSingletons(InjectorBuilder.java:193)
+	at org.elasticsearch.common.inject.InjectorBuilder.injectDynamically(InjectorBuilder.java:175)
+	... 11 more
+[2015-06-18 22:19:40,366][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:40,366][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:40,419][INFO ][gateway                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] recovered [6] indices into cluster_state
+[2015-06-18 22:19:40,420][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [local-gateway-elected-state]: took 120ms done applying updated cluster_state (version: 2)
+[2015-06-18 22:19:40,420][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [async_shard_fetch]: execute
+[2015-06-18 22:19:40,422][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] found 1 allocations of [kibana-int][2], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2]: allocating [[kibana-int][2], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] found 1 allocations of [namedentity][0], node[null], [P], s[UNASSIGNED], highest version: [6]
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0]: allocating [[namedentity][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] found 1 allocations of [test][0], node[null], [P], s[UNASSIGNED], highest version: [2]
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0]: allocating [[test][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] found 1 allocations of [kibana-int][1], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,423][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1]: allocating [[kibana-int][1], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] found 1 allocations of [kibana-int][4], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4]: throttling allocation [[kibana-int][4], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] found 1 allocations of [logstash-jmeter-results-2014.11.05][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0]: throttling allocation [[logstash-jmeter-results-2014.11.05][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] found 1 allocations of [reference_20141002][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0]: throttling allocation [[reference_20141002][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] found 1 allocations of [kibana-int][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0]: throttling allocation [[kibana-int][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,424][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] found 1 allocations of [.scripts][0], node[null], [P], s[UNASSIGNED], highest version: [14]
+[2015-06-18 22:19:40,425][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0]: throttling allocation [[.scripts][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,425][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] found 1 allocations of [kibana-int][3], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:40,425][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3]: throttling allocation [[kibana-int][3], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:40,427][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [3], source [async_shard_fetch]
+[2015-06-18 22:19:40,427][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 3
+[2015-06-18 22:19:40,427][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 3
+[2015-06-18 22:19:40,428][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] creating index
+[2015-06-18 22:19:40,428][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [test], shards [1]/[0]
+[2015-06-18 22:19:40,671][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:40,672][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:40,675][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:40,721][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating index
+[2015-06-18 22:19:40,721][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [kibana-int], shards [5]/[1]
+[2015-06-18 22:19:40,774][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:40,775][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:40,776][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:40,778][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] creating index
+[2015-06-18 22:19:40,778][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [namedentity], shards [1]/[1]
+[2015-06-18 22:19:40,825][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:40,825][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:40,825][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:40,827][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] adding mapping [dashboard], source [{"dashboard":{"properties":{"dashboard":{"type":"string"},"group":{"type":"string"},"title":{"type":"string"},"user":{"type":"string"}}}}]
+[2015-06-18 22:19:40,877][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] adding mapping [person], source [{"person":{"properties":{"content":{"type":"string","term_vector":"with_positions_offsets","analyzer":"namedentitycontent","similarity":"my_similarity","fields":{"raw":{"type":"string","index":"not_analyzed"}}}}}}]
+[2015-06-18 22:19:40,879][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] adding mapping [test], source [{"test":{"properties":{"test":{"type":"string"},"test1":{"type":"string","analyzer":"code"},"test2":{"type":"string","analyzer":"namedentity"}}}}]
+[2015-06-18 22:19:40,882][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] creating shard
+[2015-06-18 22:19:40,882][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] creating shard_id [test][0]
+[2015-06-18 22:19:40,942][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/test/0/index] as shard's index location
+[2015-06-18 22:19:40,944][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:40,945][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:40,945][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/test/0/translog] as shard's translog location
+[2015-06-18 22:19:40,949][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:40,950][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:40,951][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] state: [CREATED]
+[2015-06-18 22:19:40,951][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:40,952][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:40,956][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:40,957][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] creating shard
+[2015-06-18 22:19:40,957][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating shard_id [kibana-int][1]
+[2015-06-18 22:19:40,957][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [test][0] starting recovery from local ...
+[2015-06-18 22:19:40,967][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/1/index] as shard's index location
+[2015-06-18 22:19:40,967][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:40,967][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:40,968][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/1/translog] as shard's translog location
+[2015-06-18 22:19:40,968][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:40,969][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:40,969][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] state: [CREATED]
+[2015-06-18 22:19:40,969][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:40,969][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:40,970][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:40,970][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] creating shard
+[2015-06-18 22:19:40,970][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] [kibana-int][1] starting recovery from local ...
+[2015-06-18 22:19:40,970][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating shard_id [kibana-int][2]
+[2015-06-18 22:19:40,980][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/2/index] as shard's index location
+[2015-06-18 22:19:40,981][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:40,981][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:40,981][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/2/translog] as shard's translog location
+[2015-06-18 22:19:40,981][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [test][0] [[test][0]] skipping check for 3x segments
+[2015-06-18 22:19:40,981][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] [kibana-int][1] [[kibana-int][1]] skipping check for 3x segments
+[2015-06-18 22:19:40,982][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:40,982][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:40,982][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] state: [CREATED]
+[2015-06-18 22:19:40,983][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:40,983][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:40,983][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:40,983][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] creating shard
+[2015-06-18 22:19:40,983][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] [kibana-int][2] starting recovery from local ...
+[2015-06-18 22:19:40,984][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] creating shard_id [namedentity][0]
+[2015-06-18 22:19:40,985][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] [kibana-int][2] [[kibana-int][2]] skipping check for 3x segments
+[2015-06-18 22:19:40,993][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/namedentity/0/index] as shard's index location
+[2015-06-18 22:19:40,993][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:40,993][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:40,993][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/namedentity/0/translog] as shard's translog location
+[2015-06-18 22:19:40,994][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:40,994][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:40,995][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] state: [CREATED]
+[2015-06-18 22:19:40,995][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:40,995][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:40,996][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:40,996][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [namedentity][0] starting recovery from local ...
+[2015-06-18 22:19:40,996][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:40,996][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:40,996][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [async_shard_fetch]: took 576ms done applying updated cluster_state (version: 3)
+[2015-06-18 22:19:40,997][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [namedentity][0] [[namedentity][0]] skipping check for 3x segments
+[2015-06-18 22:19:41,041][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [namedentity][0] scheduling refresher every 1s
+[2015-06-18 22:19:41,041][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] [kibana-int][2] scheduling refresher every 1s
+[2015-06-18 22:19:41,041][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [test][0] scheduling refresher every 1s
+[2015-06-18 22:19:41,041][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] [kibana-int][1] scheduling refresher every 1s
+[2015-06-18 22:19:41,042][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [test][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,042][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] [kibana-int][2] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,042][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [namedentity][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,043][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] [kibana-int][1] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,043][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] [kibana-int][2] recovery completed from [local], took [58ms]
+[2015-06-18 22:19:41,043][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [test][0] recovery completed from [local], took [87ms]
+[2015-06-18 22:19:41,044][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] [kibana-int][1] recovery completed from [local], took [73ms]
+[2015-06-18 22:19:41,044][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [namedentity][0] recovery completed from [local], took [46ms]
+[2015-06-18 22:19:41,044][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] sending shard started for [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,044][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] sending shard started for [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,044][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] sending shard started for [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [k6IbqOvNRkq4YMGi7JNs-A], reason [after recovery from gateway]
+[2015-06-18 22:19:41,045][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#2]] - [Ringer] received shard started for [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,045][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#3]] - [Ringer] received shard started for [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,045][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] sending shard started for [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [teDZucEnRyycQzo4oODL7Q], reason [after recovery from gateway]
+[2015-06-18 22:19:41,046][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] received shard started for [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [k6IbqOvNRkq4YMGi7JNs-A], reason [after recovery from gateway]
+[2015-06-18 22:19:41,046][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] received shard started for [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [teDZucEnRyycQzo4oODL7Q], reason [after recovery from gateway]
+[2015-06-18 22:19:41,046][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,047][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] will apply shard started [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,047][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] will apply shard started [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,047][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] will apply shard started [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [k6IbqOvNRkq4YMGi7JNs-A], reason [after recovery from gateway]
+[2015-06-18 22:19:41,048][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] will apply shard started [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [teDZucEnRyycQzo4oODL7Q], reason [after recovery from gateway]
+[2015-06-18 22:19:41,049][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] found 1 allocations of [kibana-int][4], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,049][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4]: allocating [[kibana-int][4], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,049][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] found 1 allocations of [logstash-jmeter-results-2014.11.05][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,049][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0]: allocating [[logstash-jmeter-results-2014.11.05][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,050][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] found 1 allocations of [kibana-int][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,050][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0]: allocating [[kibana-int][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,050][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] found 1 allocations of [kibana-int][3], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,050][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3]: allocating [[kibana-int][3], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,050][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] found 1 allocations of [.scripts][0], node[null], [P], s[UNASSIGNED], highest version: [14]
+[2015-06-18 22:19:41,051][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0]: throttling allocation [[.scripts][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:41,051][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] found 1 allocations of [reference_20141002][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,051][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0]: throttling allocation [[reference_20141002][0], node[null], [P], s[UNASSIGNED]] to [[[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]]] on primary allocation
+[2015-06-18 22:19:41,053][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [4], source [shard-started ([kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2015-06-18 22:19:41,054][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 4
+[2015-06-18 22:19:41,054][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 4
+[2015-06-18 22:19:41,054][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] creating index
+[2015-06-18 22:19:41,054][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [logstash-jmeter-results-2014.11.05], shards [1]/[0]
+[2015-06-18 22:19:41,091][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:41,091][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:41,092][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:41,093][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] adding mapping [logs], source [{"logs":{"properties":{"@timestamp":{"type":"date","format":"dateOptionalTime"},"@version":{"type":"string"},"ErrorCount":{"type":"long"},"Hostname":{"type":"string"},"Latency":{"type":"long"},"SampleCount":{"type":"long"},"allThreads":{"type":"long"},"bytes":{"type":"long"},"elapsed":{"type":"long"},"grpThreads":{"type":"long"},"host":{"type":"string"},"label":{"type":"string"},"message":{"type":"string"},"path":{"type":"string"},"responseCode":{"type":"integer"},"success":{"type":"boolean"},"threadName":{"type":"string"},"time":{"type":"date","format":"dateOptionalTime"}}}}]
+[2015-06-18 22:19:41,100][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [test][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,100][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] creating shard
+[2015-06-18 22:19:41,100][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] creating shard_id [logstash-jmeter-results-2014.11.05][0]
+[2015-06-18 22:19:41,109][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/logstash-jmeter-results-2014.11.05/0/index] as shard's index location
+[2015-06-18 22:19:41,110][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,110][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,110][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/logstash-jmeter-results-2014.11.05/0/translog] as shard's translog location
+[2015-06-18 22:19:41,111][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,111][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,112][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] state: [CREATED]
+[2015-06-18 22:19:41,112][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,112][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,113][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,113][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] creating shard
+[2015-06-18 22:19:41,113][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] starting recovery from local ...
+[2015-06-18 22:19:41,113][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating shard_id [kibana-int][4]
+[2015-06-18 22:19:41,121][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] [[logstash-jmeter-results-2014.11.05][0]] skipping check for 3x segments
+[2015-06-18 22:19:41,124][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/4/index] as shard's index location
+[2015-06-18 22:19:41,125][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,125][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,125][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/4/translog] as shard's translog location
+[2015-06-18 22:19:41,126][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,126][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,126][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] state: [CREATED]
+[2015-06-18 22:19:41,126][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,126][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,127][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,127][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][4] starting recovery from local ...
+[2015-06-18 22:19:41,127][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] creating shard
+[2015-06-18 22:19:41,127][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating shard_id [kibana-int][0]
+[2015-06-18 22:19:41,128][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][4] [[kibana-int][4]] skipping check for 3x segments
+[2015-06-18 22:19:41,132][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][4] scheduling refresher every 1s
+[2015-06-18 22:19:41,133][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][4] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,133][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][4] recovery completed from [local], took [6ms]
+[2015-06-18 22:19:41,133][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] sending shard started for [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,133][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] received shard started for [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,139][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/0/index] as shard's index location
+[2015-06-18 22:19:41,140][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,140][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,140][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/0/translog] as shard's translog location
+[2015-06-18 22:19:41,141][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,141][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,141][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] state: [CREATED]
+[2015-06-18 22:19:41,141][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,141][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,142][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,142][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] creating shard
+[2015-06-18 22:19:41,142][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][0] starting recovery from local ...
+[2015-06-18 22:19:41,142][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] creating shard_id [kibana-int][3]
+[2015-06-18 22:19:41,143][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][0] [[kibana-int][0]] skipping check for 3x segments
+[2015-06-18 22:19:41,147][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][0] scheduling refresher every 1s
+[2015-06-18 22:19:41,148][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,148][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][0] recovery completed from [local], took [6ms]
+[2015-06-18 22:19:41,148][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] sending shard started for [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,148][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] received shard started for [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,151][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/3/index] as shard's index location
+[2015-06-18 22:19:41,152][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,152][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,152][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/kibana-int/3/translog] as shard's translog location
+[2015-06-18 22:19:41,153][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,153][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,153][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] state: [CREATED]
+[2015-06-18 22:19:41,153][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,153][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,155][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,155][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][3] starting recovery from local ...
+[2015-06-18 22:19:41,157][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][1] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,157][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][2] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,158][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [namedentity][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,158][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:41,158][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:41,159][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][3] [[kibana-int][3]] skipping check for 3x segments
+[2015-06-18 22:19:41,168][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][3] scheduling refresher every 1s
+[2015-06-18 22:19:41,169][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][3] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,169][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] [kibana-int][3] recovery completed from [local], took [14ms]
+[2015-06-18 22:19:41,169][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] sending shard started for [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,170][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#1]] - [Ringer] received shard started for [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,186][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] scheduling refresher every 5s
+[2015-06-18 22:19:41,186][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,186][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] recovery completed from [local], took [73ms]
+[2015-06-18 22:19:41,186][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] sending shard started for [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [1WTramBmRMOBinreuSAkbg], reason [after recovery from gateway]
+[2015-06-18 22:19:41,186][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] received shard started for [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [1WTramBmRMOBinreuSAkbg], reason [after recovery from gateway]
+[2015-06-18 22:19:41,214][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 167ms done applying updated cluster_state (version: 4)
+[2015-06-18 22:19:41,214][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,215][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,215][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,215][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,215][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,215][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,216][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,216][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] will apply shard started [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,216][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] will apply shard started [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,216][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] will apply shard started [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [iEEft_W5QcinFh1vab7hGw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,216][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] will apply shard started [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [1WTramBmRMOBinreuSAkbg], reason [after recovery from gateway]
+[2015-06-18 22:19:41,217][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] found 1 allocations of [reference_20141002][0], node[null], [P], s[UNASSIGNED], highest version: [34]
+[2015-06-18 22:19:41,218][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0]: allocating [[reference_20141002][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,218][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] found 1 allocations of [.scripts][0], node[null], [P], s[UNASSIGNED], highest version: [14]
+[2015-06-18 22:19:41,218][DEBUG][gateway.local            ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0]: allocating [[.scripts][0], node[null], [P], s[UNASSIGNED]] to [[Ringer][BOBkYHqHQR6ckjl3G8rryQ][rpochet][inet[/192.168.1.12:9300]]] on primary allocation
+[2015-06-18 22:19:41,222][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [5], source [shard-started ([kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2015-06-18 22:19:41,222][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 5
+[2015-06-18 22:19:41,222][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 5
+[2015-06-18 22:19:41,223][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] creating index
+[2015-06-18 22:19:41,223][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [.scripts], shards [1]/[0]
+[2015-06-18 22:19:41,260][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/script-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:41,260][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:41,261][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:41,262][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] creating index
+[2015-06-18 22:19:41,262][DEBUG][indices                  ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] creating Index [reference_20141002], shards [1]/[1]
+[2015-06-18 22:19:41,412][DEBUG][index.mapper             ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] using dynamic[true], default mapping: default_mapping_location[null], loaded_from[jar:file:/home/rpochet/.m2/repository/org/elasticsearch/elasticsearch/1.6.0/elasticsearch-1.6.0.jar!/org/elasticsearch/index/mapper/default-mapping.json], default percolator mapping: location[null], loaded_from[null]
+[2015-06-18 22:19:41,412][DEBUG][index.cache.query.parser.resident] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] using [resident] query cache with max_size [100], expire [null]
+[2015-06-18 22:19:41,413][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] using index.store.throttle.type [node], with index.store.throttle.max_bytes_per_sec [0b]
+[2015-06-18 22:19:41,416][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] adding mapping [mustache], source [{"mustache":{"properties":{"script":{"type":"object","enabled":false},"template":{"type":"object","enabled":false}}}}]
+[2015-06-18 22:19:41,418][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] adding mapping [entity] (source suppressed due to length, use TRACE level if needed)
+[2015-06-18 22:19:41,485][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] adding alias [reference], filter [null]
+[2015-06-18 22:19:41,486][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] creating shard
+[2015-06-18 22:19:41,486][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] creating shard_id [.scripts][0]
+[2015-06-18 22:19:41,493][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/.scripts/0/index] as shard's index location
+[2015-06-18 22:19:41,494][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,494][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,494][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/.scripts/0/translog] as shard's translog location
+[2015-06-18 22:19:41,495][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,495][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,495][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] state: [CREATED]
+[2015-06-18 22:19:41,495][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,495][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,496][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,496][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [.scripts][0] starting recovery from local ...
+[2015-06-18 22:19:41,496][DEBUG][indices.cluster          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] creating shard
+[2015-06-18 22:19:41,496][DEBUG][index                    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] creating shard_id [reference_20141002][0]
+[2015-06-18 22:19:41,498][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [.scripts][0] [[.scripts][0]] skipping check for 3x segments
+[2015-06-18 22:19:41,506][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [.scripts][0] scheduling refresher every 1s
+[2015-06-18 22:19:41,506][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [.scripts][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,507][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [.scripts][0] recovery completed from [local], took [11ms]
+[2015-06-18 22:19:41,507][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] sending shard started for [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [C9FvgHScQJCM5oADwRYVEQ], reason [after recovery from gateway]
+[2015-06-18 22:19:41,507][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] received shard started for [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [C9FvgHScQJCM5oADwRYVEQ], reason [after recovery from gateway]
+[2015-06-18 22:19:41,508][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/reference_20141002/0/index] as shard's index location
+[2015-06-18 22:19:41,510][DEBUG][index.store              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] store stats are refreshed with refresh_interval [10s]
+[2015-06-18 22:19:41,510][DEBUG][index.merge.scheduler    ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] using [concurrent] merge scheduler with max_thread_count[3], max_merge_count[5]
+[2015-06-18 22:19:41,511][DEBUG][index.store.fs           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002] using [/home/rpochet/workspace/namedentity/data/elasticsearch/nodes/0/indices/reference_20141002/0/translog] as shard's translog location
+[2015-06-18 22:19:41,513][DEBUG][index.deletionpolicy     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] Using [keep_only_last] deletion policy
+[2015-06-18 22:19:41,514][DEBUG][index.merge.policy       ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[10], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[10.0], reclaim_deletes_weight[2.0]
+[2015-06-18 22:19:41,514][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] state: [CREATED]
+[2015-06-18 22:19:41,515][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] scheduling optimizer / merger every 1s
+[2015-06-18 22:19:41,515][DEBUG][index.translog           ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] interval [5s], flush_threshold_ops [2147483647], flush_threshold_size [512mb], flush_threshold_period [30m]
+[2015-06-18 22:19:41,517][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] state: [CREATED]->[RECOVERING], reason [from gateway]
+[2015-06-18 22:19:41,517][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [reference_20141002][0] starting recovery from local ...
+[2015-06-18 22:19:41,517][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,518][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][3] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,519][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [kibana-int][4] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,520][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,520][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:41,520][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:41,521][DEBUG][index.engine             ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [reference_20141002][0] [[reference_20141002][0]] skipping check for 3x segments
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 337ms done applying updated cluster_state (version: 5)
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 0s no change in cluster_state
+[2015-06-18 22:19:41,553][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,554][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] will apply shard started [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [C9FvgHScQJCM5oADwRYVEQ], reason [after recovery from gateway]
+[2015-06-18 22:19:41,555][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [6], source [shard-started ([.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2015-06-18 22:19:41,555][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 6
+[2015-06-18 22:19:41,555][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 6
+[2015-06-18 22:19:41,556][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [.scripts][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,557][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:41,557][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:41,562][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 8ms done applying updated cluster_state (version: 6)
+[2015-06-18 22:19:41,588][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [reference_20141002][0] scheduling refresher every 1s
+[2015-06-18 22:19:41,589][DEBUG][index.shard              ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [reference_20141002][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from gateway]
+[2015-06-18 22:19:41,589][DEBUG][index.gateway            ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] [reference_20141002][0] recovery completed from [local], took [72ms]
+[2015-06-18 22:19:41,589][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] sending shard started for [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [rsBIry3OShaEq0c_K0r3hw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,589][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][generic][T#4]] - [Ringer] received shard started for [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [rsBIry3OShaEq0c_K0r3hw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,589][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: execute
+[2015-06-18 22:19:41,589][DEBUG][cluster.action.shard     ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] will apply shard started [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING], indexUUID [rsBIry3OShaEq0c_K0r3hw], reason [after recovery from gateway]
+[2015-06-18 22:19:41,593][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] cluster state updated, version [7], source [shard-started ([reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]
+[2015-06-18 22:19:41,593][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] publishing cluster state version 7
+[2015-06-18 22:19:41,593][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] set local cluster state to version 7
+[2015-06-18 22:19:41,595][DEBUG][index.shard              ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] [reference_20141002][0] state: [POST_RECOVERY]->[STARTED], reason [global state is [STARTED]]
+[2015-06-18 22:19:41,596][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: execute
+[2015-06-18 22:19:41,596][DEBUG][river.cluster            ] - [elasticsearch[Ringer][riverClusterService#updateTask][T#1]] - [Ringer] processing [reroute_rivers_node_changed]: no change in cluster_state
+[2015-06-18 22:19:41,604][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [shard-started ([reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[INITIALIZING]), reason [after recovery from gateway]]: took 14ms done applying updated cluster_state (version: 7)
+[2015-06-18 22:19:50,246][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [routing-table-updater]: execute
+[2015-06-18 22:19:50,248][DEBUG][cluster.service          ] - [elasticsearch[Ringer][clusterService#updateTask][T#1]] - [Ringer] processing [routing-table-updater]: took 1ms no change in cluster_state
+[2015-06-18 22:20:06,380][DEBUG][indices.memory           ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] recalculating shard indexing buffer (reason=[[ADDED]]), total is [713.7mb] with [10] active shards, each shard set to indexing=[71.3mb], translog=[64kb]
+[2015-06-18 22:20:06,380][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [test][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,380][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [.scripts][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,381][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [reference_20141002][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,381][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,381][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [kibana-int][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,381][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [kibana-int][1] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,382][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [kibana-int][2] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,382][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [kibana-int][3] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,382][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [kibana-int][4] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:06,382][DEBUG][index.shard              ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] [namedentity][0] updating index_buffer_size from [64mb] to [71.3mb]
+[2015-06-18 22:20:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,260][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,258][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,256][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,265][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,263][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:40,261][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2521e634]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:20:55,308][INFO ][script                   ] - [elasticsearch[Ringer][scheduler][T#1]] - [Ringer] removing script file [/home/rpochet/workspace/namedentity/config/scripts/test1.mustache]
+[2015-06-18 22:21:10,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,257][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,256][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,260][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,259][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:10,258][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@7f99a13b]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,254][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,257][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,257][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,260][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,259][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:21:40,258][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@17321d79]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,271][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,271][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,271][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,271][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,273][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,272][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,271][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,275][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#2]] - [Ringer] [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,275][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:10,274][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@71a82856]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [.scripts][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [logstash-jmeter-results-2014.11.05][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [kibana-int][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,255][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [namedentity][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,258][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [kibana-int][1], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,257][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [test][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,256][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#5]] - [Ringer] [reference_20141002][0], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,261][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#4]] - [Ringer] [kibana-int][4], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,260][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#1]] - [Ringer] [kibana-int][3], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-06-18 22:22:40,259][DEBUG][action.admin.indices.stats] - [elasticsearch[Ringer][management][T#3]] - [Ringer] [kibana-int][2], node[BOBkYHqHQR6ckjl3G8rryQ], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31ff9c27]
+org.elasticsearch.ElasticsearchException: failed to refresh store stats
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1573)
+	at org.elasticsearch.index.store.Store$StoreStatsCache.refresh(Store.java:1558)
+	at org.elasticsearch.common.util.SingleObjectCache.getOrRefresh(SingleObjectCache.java:55)
+	at org.elasticsearch.index.store.Store.stats(Store.java:290)
+	at org.elasticsearch.index.shard.IndexShard.storeStats(IndexShard.java:639)
+	at org.elasticsearch.action.admin.indices.stats.CommonStats.<init>(CommonStats.java:139)
+	at org.elasticsearch.action.admin.indices.stats.ShardStats.<init>(ShardStats.java:55)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:208)
+	at org.elasticsearch.action.admin.indices.stats.TransportIndicesStatsAction.shardOperation(TransportIndicesStatsAction.java:56)
+	at org.elasticsearch.action.support.broadcast.TransportBroadcastOperationAction$AsyncBroadcastAction$1.run(TransportBroadcastOperationAction.java:170)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
