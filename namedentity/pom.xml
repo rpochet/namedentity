@@ -5,7 +5,7 @@
 	<artifactId>namedentity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-	<es.version>1.6.0</es.version>
+	<es.version>6.8.17</es.version>
 	<java.version>1.7</java.version>
 	</properties>
 	<build>
