@@ -5,8 +5,8 @@
 	<artifactId>namedentity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
-	    <es.version>8.3</es.version>
-	    <java.version>14</java.version>
+	    <es.version>8.9.0</es.version>
+	    <java.version>17</java.version>
 	</properties>
 	<build>
 		<plugins>
